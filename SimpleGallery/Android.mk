@@ -1,0 +1,10 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := SimpleGallery
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MULTILIB := both
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_OVERRIDES_PACKAGES := Gallery2
+LOCAL_SRC_FILES := com.simplemobiletools.gallery.pro.apk
+LOCAL_PRODUCT_MODULE := true
+include $(BUILD_PREBUILT)
